@@ -1,2150 +1,769 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
-
-    <!-- =========================
-       SEO
-  ========================== -->
-    <title>Happy Teacher's Day · Sir Yumkhaibam Anish Khan</title>
-
-    <meta name="description"
-        content="A special Teacher's Day tribute to my mentor, Sir Yumkhaibam Anish Khan — the teacher who taught me to code, think, build and never give up." />
-
-    <meta name="keywords"
-        content="Happy Teacher's Day, Sir Anish Khan, Yumkhaibam Anish Khan, Teacher's Day tribute, mentor, coding teacher" />
-
-    <meta name="author" content="Your Student" />
-
-    <!-- =========================
-       OPEN GRAPH
-  ========================== -->
-
-    <meta property="og:type" content="website" />
-
-    <meta property="og:title" content="Happy Teacher's Day, Sir ❤️ | Sir Yumkhaibam Anish Khan" />
-
-    <meta property="og:description"
-        content="A special Teacher's Day tribute to my mentor, Sir Yumkhaibam Anish Khan — the teacher who taught me to code, think, build and never give up." />
-
-    <!-- CHANGE YOUR DOMAIN HERE -->
-    <meta property="og:url" content="https://teachers.faridmakak754.workers.dev/" />
-
-    <meta property="og:image" content="https://teachers.faridmakak754.workers.dev/teacher.jpeg" />
-
-    <meta property="og:image:alt" content="Sir Yumkhaibam Anish Khan - Teacher's Day Tribute" />
-
-    <meta property="og:image:type" content="image/jpeg" />
-
-    <meta property="og:site_name" content="Teacher's Day Tribute" />
-
-    <!-- =========================
-       TWITTER / X
-  ========================== -->
-
-    <meta name="twitter:card" content="summary_large_image" />
-
-    <meta name="twitter:title" content="Happy Teacher's Day, Sir ❤️" />
-
-    <meta name="twitter:description"
-        content="A special Teacher's Day tribute to my mentor, Sir Yumkhaibam Anish Khan." />
-
-    <meta name="twitter:image" content="https://YOUR-DOMAIN.com/teacher.jpeg" />
-
-    <meta name="twitter:image:alt" content="Sir Yumkhaibam Anish Khan - Teacher's Day Tribute" />
-
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-
-    <style>
-        /* =========================
-       BASE
-    ========================== */
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background: #080c1a;
-            color: #e2e8f0;
-            overflow-x: hidden;
-        }
-
-        /* =========================
-       GLASSMORPHISM
-    ========================== */
-
-        .glass-premium {
-            background: rgba(15, 23, 42, 0.35);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
-        }
-
-        .glow-ring {
-            box-shadow:
-                0 0 40px rgba(99, 102, 241, 0.25),
-                0 0 80px rgba(56, 189, 248, 0.15);
-        }
-
-        /* =========================
-       PARTICLES
-    ========================== */
-
-        .particle {
-            position: fixed;
-            border-radius: 50%;
-            background:
-                radial-gradient(circle at 30% 30%,
-                    #a5b4fc,
-                    #4f46e5);
-            opacity: 0.25;
-            pointer-events: none;
-            z-index: 0;
-            filter: blur(1px);
-            animation:
-                floatParticle 12s infinite alternate ease-in-out;
-        }
-
-        @keyframes floatParticle {
-
-            0% {
-                transform: translate(0, 0) scale(1);
-            }
-
-            100% {
-                transform:
-                    translate(30px, -40px) scale(1.4);
-            }
-
-        }
-
-        /* =========================
-       FLOATING CODE
-    ========================== */
-
-        .code-float {
-            position: absolute;
-            font-family:
-                'Fira Code',
-                'JetBrains Mono',
-                monospace;
-
-            font-size: 0.9rem;
-
-            opacity: 0.08;
-
-            color: #94a3b8;
-
-            pointer-events: none;
-
-            white-space: nowrap;
-
-            letter-spacing: 1px;
-
-            font-weight: 300;
-        }
-
-        /* =========================
-       TERMINAL BUTTON
-    ========================== */
-
-        .terminal-btn {
-            background: #0f172a;
-
-            border: 1px solid #334155;
-
-            color: #a5f3fc;
-
-            transition: all 0.2s;
-
-            font-family:
-                'Fira Code',
-                monospace;
-
-            font-size: 0.85rem;
-        }
-
-        .terminal-btn:hover {
-
-            background: #1e293b;
-
-            border-color: #38bdf8;
-
-            box-shadow:
-                0 0 24px #38bdf840;
-        }
-
-        /* =========================
-       CARDS
-    ========================== */
-
-        .card-elegant {
-
-            transition:
-                transform 0.25s ease,
-                box-shadow 0.3s;
-
-            background:
-                rgba(15, 23, 42, 0.5);
-
-            backdrop-filter: blur(6px);
-
-            border:
-                1px solid rgba(255, 255, 255, 0.04);
-        }
-
-        .card-elegant:hover {
-
-            transform:
-                translateY(-8px);
-
-            box-shadow:
-                0 30px 50px -16px #2563eb30;
-
-            border-color:
-                rgba(99, 102, 241, 0.2);
-        }
-
-        /* =========================
-       TIMELINE
-    ========================== */
-
-        .timeline-dot {
-
-            width: 16px;
-
-            height: 16px;
-
-            background: #6366f1;
-
-            border-radius: 50%;
-
-            border:
-                2px solid #a5b4fc;
-
-            box-shadow:
-                0 0 20px #6366f180;
-
-            flex-shrink: 0;
-        }
-
-        .timeline-line {
-
-            width: 2px;
-
-            background:
-                linear-gradient(to bottom,
-                    #818cf8,
-                    #38bdf8,
-                    #818cf8);
-        }
-
-        /* =========================
-       REVEAL ANIMATION
-    ========================== */
-
-        .reveal {
-
-            opacity: 0;
-
-            transform:
-                translateY(40px);
-
-            transition:
-                opacity 0.9s cubic-bezier(0.2,
-                    0.9,
-                    0.3,
-                    1),
-
-                transform 0.9s cubic-bezier(0.2,
-                    0.9,
-                    0.3,
-                    1);
-        }
-
-        .reveal.visible {
-
-            opacity: 1;
-
-            transform:
-                translateY(0);
-        }
-
-        /* =========================
-       CONFETTI
-    ========================== */
-
-        .confetti-piece {
-
-            position: fixed;
-
-            width: 10px;
-
-            height: 10px;
-
-            pointer-events: none;
-
-            z-index: 999;
-
-            opacity: 0.95;
-
-            border-radius: 2px;
-        }
-
-        /* =========================
-       HERO
-    ========================== */
-
-        .hero-glow {
-
-            background:
-                radial-gradient(ellipse at 30% 40%,
-                    #1e1b4b 0%,
-                    #0b0e1a 70%);
-        }
-
-        /* =========================
-       TYPING CURSOR
-    ========================== */
-
-        .typing-cursor::after {
-
-            content: '|';
-
-            animation:
-                blink 1s step-end infinite;
-
-            color: #818cf8;
-
-            font-weight: 200;
-        }
-
-        @keyframes blink {
-
-            0%,
-            100% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0;
-            }
-        }
-
-        /* =========================
-       GRID
-    ========================== */
-
-        .bg-grid-pattern {
-
-            background-image:
-
-                linear-gradient(rgba(255, 255, 255, 0.01) 1px,
-                    transparent 1px),
-
-                linear-gradient(90deg,
-                    rgba(255, 255, 255, 0.01) 1px,
-                    transparent 1px);
-
-            background-size: 40px 40px;
-        }
-
-        /* =========================
-       GLOW TEXT
-    ========================== */
-
-        .glow-text {
-
-            text-shadow:
-                0 0 40px rgba(99, 102, 241, 0.3);
-        }
-
-        /* =========================
-       RESPONSIVE
-    ========================== */
-
-        @media (max-width: 640px) {
-
-            .code-float {
-                display: none;
-            }
-
-        }
-    </style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+
+  <title>Teacher's Day · Sir Yumkhaibam Anish Khan</title>
+
+  <meta name="description" content="A special Teacher's Day tribute to Sir Yumkhaibam Anish Khan — a mentor who inspires, teaches, guides and encourages developers to keep learning." />
+  <meta name="keywords" content="Teacher's Day, Sir Yumkhaibam Anish Khan, Mentor, Developer Mentor, Teacher Tribute" />
+  <meta name="author" content="Your Grateful Student" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Happy Teacher's Day · Sir Yumkhaibam Anish Khan" />
+  <meta property="og:description" content="A special Teacher's Day tribute to my developer mentor, Sir Yumkhaibam Anish Khan." />
+  <meta property="og:image" content="teacher.jpeg" />
+  <meta property="og:image:alt" content="Sir Yumkhaibam Anish Khan" />
+  <meta property="og:url" content="https://teachers.faridmakak754.workers.dev/" />
+  <meta property="og:site_name" content="Teacher's Day Tribute" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Happy Teacher's Day · Sir Yumkhaibam Anish Khan" />
+  <meta name="twitter:description" content="A special Teacher's Day tribute to my developer mentor, Sir Yumkhaibam Anish Khan." />
+  <meta name="twitter:image" content="teacher.jpeg" />
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#080c1a" />
+
+  <!-- Tailwind + Font Awesome -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: #080c1a;
+      color: #e2e8f0;
+      overflow-x: hidden;
+    }
+
+    .glass-premium {
+      background: rgba(15, 23, 42, 0.35);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    }
+
+    .glow-ring {
+      box-shadow: 0 0 40px rgba(99, 102, 241, 0.25), 0 0 80px rgba(56, 189, 248, 0.15);
+    }
+
+    .particle {
+      position: fixed;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #a5b4fc, #4f46e5);
+      opacity: 0.25;
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(1px);
+      animation: floatParticle 12s infinite alternate ease-in-out;
+    }
+
+    @keyframes floatParticle {
+      0% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      100% {
+        transform: translate(30px, -40px) scale(1.4);
+      }
+    }
+
+    .code-float {
+      position: absolute;
+      font-family: 'Fira Code', 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      opacity: 0.08;
+      color: #94a3b8;
+      pointer-events: none;
+      white-space: nowrap;
+      letter-spacing: 1px;
+      font-weight: 300;
+    }
+
+    .terminal-btn {
+      background: #0f172a;
+      border: 1px solid #334155;
+      color: #a5f3fc;
+      transition: all 0.2s;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.85rem;
+    }
+
+    .terminal-btn:hover {
+      background: #1e293b;
+      border-color: #38bdf8;
+      box-shadow: 0 0 24px #38bdf840;
+    }
+
+    .card-elegant {
+      transition: transform 0.25s ease, box-shadow 0.3s;
+      background: rgba(15, 23, 42, 0.5);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .card-elegant:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 30px 50px -16px #2563eb30;
+      border-color: rgba(99, 102, 241, 0.2);
+    }
+
+    .timeline-dot {
+      width: 16px;
+      height: 16px;
+      background: #6366f1;
+      border-radius: 50%;
+      border: 2px solid #a5b4fc;
+      box-shadow: 0 0 20px #6366f180;
+      flex-shrink: 0;
+    }
+
+    .timeline-line {
+      width: 2px;
+      background: linear-gradient(to bottom, #818cf8, #38bdf8, #818cf8);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.9s cubic-bezier(0.2, 0.9, 0.3, 1), transform 0.9s cubic-bezier(0.2, 0.9, 0.3, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .confetti-piece {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      pointer-events: none;
+      z-index: 999;
+      opacity: 0.95;
+      border-radius: 2px;
+    }
+
+    .hero-glow {
+      background: radial-gradient(ellipse at 30% 40%, #1e1b4b 0%, #0b0e1a 70%);
+    }
+
+    .typing-cursor::after {
+      content: '|';
+      animation: blink 1s step-end infinite;
+      color: #818cf8;
+      font-weight: 200;
+    }
+
+    @keyframes blink {
+      0%, 100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .bg-grid-pattern {
+      background-image: linear-gradient(rgba(255,255,255,0.01) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.01) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    .glow-text {
+      text-shadow: 0 0 40px rgba(99, 102, 241, 0.3);
+    }
+
+    @media (max-width: 640px) {
+      .code-float {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-    <!-- =====================================================
-       PARTICLES
-  ====================================================== -->
+  <!-- ===== PARTICLES ===== -->
+  <div id="particles" class="fixed inset-0 pointer-events-none z-0"></div>
 
-    <div id="particles" class="fixed inset-0 pointer-events-none z-0"></div>
+  <!-- ===== MOUSE GLOW ===== -->
+  <div id="mouseGlow" class="fixed w-96 h-96 rounded-full pointer-events-none z-0 opacity-20 blur-3xl transition-all duration-200" style="background: radial-gradient(circle, #818cf8, transparent 70%);"></div>
+
+  <!-- ===== BACKGROUND MUSIC ===== -->
+  <audio id="bgMusic" loop preload="auto" autoplay>
+    <source src="audio.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center hero-glow overflow-hidden px-6 pt-10 pb-20 bg-grid-pattern">
+
+    <div class="code-float top-[10%] left-[6%] text-4xl">{ }</div>
+    <div class="code-float bottom-[22%] right-[8%] text-4xl">&lt;/&gt;</div>
+    <div class="code-float top-[25%] right-[4%] text-xl">Java · Servlet</div>
+    <div class="code-float bottom-[30%] left-[4%] text-xl">Spring · JDBC</div>
+    <div class="code-float top-[55%] left-[12%] text-2xl">HTML · CSS · JS</div>
+    <div class="code-float bottom-[12%] right-[18%] text-xl">public class Mentor</div>
+
+    <div class="relative z-10 max-w-5xl mx-auto text-center">
+
+      <!-- PHOTO -->
+      <div class="flex justify-center mb-8">
+        <div class="relative w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 rounded-full p-1.5 glass-premium glow-ring animate-[fadeIn_1s_ease-out]">
+
+          <div class="w-full h-full rounded-full overflow-hidden border-2 border-white/10 shadow-2xl">
+            <img src="teacher.jpeg" alt="Sir Yumkhaibam Anish Khan" class="w-full h-full object-cover" />
+          </div>
+
+          <div class="absolute inset-0 rounded-full border border-indigo-400/20 animate-pulse"></div>
+
+        </div>
+      </div>
+
+      <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold bg-gradient-to-r from-indigo-200 via-blue-200 to-cyan-200 bg-clip-text text-transparent leading-tight glow-text">
+        Happy Teacher’s Day, Sir ❤️
+      </h1>
+
+      <p class="text-xl sm:text-2xl md:text-3xl font-light text-indigo-100/80 mt-3">
+        To My Mentor, Sir Yumkhaibam Anish Khan
+      </p>
+
+      <p class="max-w-2xl mx-auto mt-6 text-base sm:text-lg text-slate-300/70 font-light leading-relaxed">
+        “You didn't just teach me to code. You taught me how to think, build, solve problems, and never give up.”
+      </p>
+
+      <!-- TERMINAL EASTER EGG -->
+      <div class="mt-10 flex justify-center">
+        <button id="terminalBtn" class="terminal-btn px-5 py-2.5 rounded-full flex items-center gap-2">
+          <i class="fas fa-terminal"></i>
+          $ sudo thank-you --mentor
+        </button>
+      </div>
+
+      <div id="terminalOutput" class="mt-4 max-w-md mx-auto text-left text-xs font-mono bg-[#0f172a]/80 p-5 rounded-2xl border border-slate-700/50 hidden transition-all">
+
+        <div id="terminalLines" class="space-y-1.5 text-cyan-300"></div>
+
+        <div id="terminalFinal" class="mt-3 text-emerald-300 font-semibold hidden">
+          Compilation successful. Happy Teacher’s Day! 🎉
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== APPRECIATION ===== -->
+  <section id="appreciation" class="py-24 px-6 bg-[#0c1020] relative">
+
+    <div class="max-w-4xl mx-auto reveal">
+
+      <h2 class="text-3xl md:text-5xl font-bold text-center text-indigo-200">
+        More Than Just a Teacher
+      </h2>
+
+      <div class="h-1 w-24 bg-gradient-to-r from-indigo-400 to-cyan-400 mx-auto mt-4 rounded-full"></div>
+
+      <div class="mt-12 space-y-6 text-slate-300/80 text-base sm:text-lg leading-relaxed glass-premium p-8 rounded-3xl border border-white/5">
+
+        <p>
+          Sir Anish Khan is not just a teacher — he is a mentor who makes you believe in your own potential. He doesn't just hand out solutions; he guides you to discover them yourself. Every time I was stuck, he'd say,
+          <span class="text-indigo-300 italic">“Read the error, understand it, then fix it.”</span>
+        </p>
+
+        <p>
+          He taught me that programming is not about memorizing syntax, but about building a mindset. He inspired me to keep learning, to be curious, and to never settle for "it works" without understanding why.
+        </p>
+
+        <p class="text-indigo-200/70">
+          To me, he’s the reason I still love coding. He made the journey feel less lonely.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== LESSONS ===== -->
+  <section id="lessons" class="py-24 px-6 bg-[#080c1a]">
+
+    <div class="max-w-6xl mx-auto">
+
+      <h2 class="text-3xl md:text-5xl font-bold text-center text-indigo-200">
+        What You Taught Me
+      </h2>
+
+      <div class="h-1 w-24 bg-gradient-to-r from-indigo-400 to-cyan-400 mx-auto mt-4 rounded-full"></div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+
+        <div class="card-elegant p-7 rounded-2xl reveal border border-white/5">
+          <i class="fas fa-brain text-indigo-400 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold text-indigo-100">Think Before You Code</h3>
+          <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+            “Good programming isn't just about writing code. It's about understanding the problem.”
+          </p>
+        </div>
+
+        <div class="card-elegant p-7 rounded-2xl reveal border border-white/5">
+          <i class="fas fa-graduation-cap text-indigo-400 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold text-indigo-100">Never Stop Learning</h3>
+          <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+            “Technology keeps changing, and you taught me to keep growing with it.”
+          </p>
+        </div>
+
+        <div class="card-elegant p-7 rounded-2xl reveal border border-white/5">
+          <i class="fas fa-bug text-indigo-400 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold text-indigo-100">Debug, Learn, Improve</h3>
+          <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+            “Every error is another opportunity to understand something better.”
+          </p>
+        </div>
+
+        <div class="card-elegant p-7 rounded-2xl reveal border border-white/5">
+          <i class="fas fa-heart text-indigo-400 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold text-indigo-100">Believe in Yourself</h3>
+          <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+            “Your guidance gave me confidence to keep trying even when the code refused to cooperate.”
+          </p>
+        </div>
+
+        <div class="card-elegant p-7 rounded-2xl reveal border border-white/5">
+          <i class="fas fa-code text-indigo-400 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold text-indigo-100">Build Something Real</h3>
+          <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+            “You inspired me to turn ideas into actual projects.”
+          </p>
+        </div>
+
+        <div class="card-elegant p-7 rounded-2xl reveal border border-white/5">
+          <i class="fas fa-rocket text-indigo-400 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold text-indigo-100">Keep Going</h3>
+          <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+            “The biggest lesson wasn't a programming language — it was persistence.”
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUOTE ===== -->
+  <section class="py-24 px-6 bg-[#0c1020] flex items-center justify-center">
+
+    <div class="max-w-4xl mx-auto text-center reveal">
+
+      <div class="text-5xl text-indigo-300/20">“</div>
+
+      <p class="text-2xl sm:text-3xl md:text-4xl font-light text-indigo-100/80 italic leading-relaxed">
+        “Behind every growing developer, there is someone who patiently answered the same question twice, explained the same concept again, and encouraged them to try one more time.”
+      </p>
+
+      <p class="mt-8 text-xl text-indigo-300/60 font-light">
+        — With gratitude, your student ❤️
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ===== TIMELINE ===== -->
+  <section class="py-24 px-6 bg-[#080c1a]">
+
+    <div class="max-w-3xl mx-auto">
+
+      <h2 class="text-3xl md:text-5xl font-bold text-center text-indigo-200">
+        My Developer Journey
+      </h2>
+
+      <div class="h-1 w-24 bg-gradient-to-r from-indigo-400 to-cyan-400 mx-auto mt-4 rounded-full"></div>
+
+      <div class="mt-14 relative flex flex-col items-center">
+
+        <div class="timeline-line absolute left-1/2 top-0 bottom-0 -translate-x-1/2 w-0.5"></div>
+
+        <div class="space-y-10 w-full max-w-sm relative">
+
+          <div class="flex items-center gap-5 reveal">
+            <div class="timeline-dot"></div>
+            <div class="glass-premium p-4 rounded-2xl flex-1 border border-white/5">
+              <i class="fas fa-book-open text-indigo-300 mr-3"></i>
+              Learning
+            </div>
+          </div>
+
+          <div class="flex items-center gap-5 reveal">
+            <div class="timeline-dot"></div>
+            <div class="glass-premium p-4 rounded-2xl flex-1 border border-white/5">
+              <i class="fas fa-laptop-code text-indigo-300 mr-3"></i>
+              Practicing
+            </div>
+          </div>
+
+          <div class="flex items-center gap-5 reveal">
+            <div class="timeline-dot"></div>
+            <div class="glass-premium p-4 rounded-2xl flex-1 border border-white/5">
+              <i class="fas fa-project-diagram text-indigo-300 mr-3"></i>
+              Making Projects
+            </div>
+          </div>
+
+          <div class="flex items-center gap-5 reveal">
+            <div class="timeline-dot"></div>
+            <div class="glass-premium p-4 rounded-2xl flex-1 border border-white/5">
+              <i class="fas fa-search text-indigo-300 mr-3"></i>
+              Debugging
+            </div>
+          </div>
+
+          <div class="flex items-center gap-5 reveal">
+            <div class="timeline-dot"></div>
+            <div class="glass-premium p-4 rounded-2xl flex-1 border border-white/5">
+              <i class="fas fa-arrow-up text-indigo-300 mr-3"></i>
+              Improving
+            </div>
+          </div>
+
+          <div class="flex items-center gap-5 reveal">
+            <div class="timeline-dot"></div>
+            <div class="glass-premium p-4 rounded-2xl flex-1 border border-white/5">
+              <i class="fas fa-user-check text-indigo-300 mr-3"></i>
+              Becoming a Developer
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== THANK YOU ===== -->
+  <section class="py-24 px-6 bg-[#0c1020] flex items-center justify-center">
+
+    <div class="max-w-3xl mx-auto text-center reveal">
+
+      <h2 class="text-4xl md:text-6xl font-bold text-indigo-200">
+        Thank You, Sir.
+      </h2>
+
+      <div class="h-1 w-24 bg-gradient-to-r from-indigo-400 to-cyan-400 mx-auto mt-4 rounded-full"></div>
+
+      <p class="mt-10 text-lg sm:text-xl text-slate-300/70 leading-relaxed">
+        “Thank you for every explanation, every correction, every piece of advice, and every time you encouraged me to keep going.”
+      </p>
+
+      <p class="mt-6 text-base sm:text-lg text-indigo-200/60 italic">
+        “I may forget some lines of code, but I will never forget the lessons you taught me.”
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ===== FINAL ===== -->
+  <section id="final" class="relative min-h-screen flex flex-col items-center justify-center px-6 bg-[#080c1a] overflow-hidden">
+
+    <div class="relative z-10 text-center reveal">
+
+      <h1 class="text-5xl sm:text-7xl md:text-8xl font-extrabold bg-gradient-to-r from-indigo-200 via-fuchsia-200 to-cyan-200 bg-clip-text text-transparent leading-tight glow-text">
+        HAPPY TEACHER’S DAY
+      </h1>
+
+      <p class="text-3xl sm:text-4xl md:text-5xl font-light text-indigo-100/70 mt-4">
+        Sir Yumkhaibam Anish Khan
+      </p>
+
+      <p class="mt-8 text-xl text-indigo-200/60">
+        From your grateful student ❤️
+      </p>
+
+      <button id="confettiTrigger" class="mt-10 px-8 py-3.5 rounded-full bg-indigo-500/20 border border-indigo-400/30 text-indigo-200 hover:bg-indigo-500/30 transition text-sm">
+        🎉 Celebrate
+      </button>
+
+    </div>
+  </section>
+
+  <script>
+    (function () {
+
+      /* ===== PARTICLES ===== */
+
+      const pContainer = document.getElementById('particles');
+
+      for (let i = 0; i < 50; i++) {
+
+        const p = document.createElement('div');
+
+        p.className = 'particle';
+
+        const size = 3 + Math.random() * 10;
+
+        p.style.width = size + 'px';
+        p.style.height = size + 'px';
+        p.style.left = Math.random() * 100 + '%';
+        p.style.top = Math.random() * 100 + '%';
+        p.style.opacity = 0.15 + Math.random() * 0.25;
+        p.style.animationDuration = (10 + Math.random() * 14) + 's';
+        p.style.animationDelay = (Math.random() * 6) + 's';
+
+        pContainer.appendChild(p);
+      }
 
 
-    <!-- =====================================================
-       MOUSE GLOW
-  ====================================================== -->
+      /* ===== MOUSE GLOW ===== */
 
-    <div id="mouseGlow"
-        class="fixed w-96 h-96 rounded-full pointer-events-none z-0 opacity-20 blur-3xl transition-all duration-200"
-        style="
-      background:
-      radial-gradient(
-        circle,
-        #818cf8,
-        transparent 70%
+      const glow = document.getElementById('mouseGlow');
+
+      document.addEventListener('mousemove', (e) => {
+        glow.style.left = (e.clientX - 180) + 'px';
+        glow.style.top = (e.clientY - 180) + 'px';
+      });
+
+
+      /* ===== BACKGROUND MUSIC ===== */
+
+      const audio = document.getElementById('bgMusic');
+
+      function startMusic() {
+
+        if (!audio) return;
+
+        audio.play().catch(() => {
+          console.log('Autoplay blocked by browser.');
+        });
+
+      }
+
+      window.addEventListener('load', () => {
+        startMusic();
+      });
+
+      /*
+       * Modern browsers often block autoplay with sound.
+       * Start music automatically after the first interaction.
+       */
+
+      const startAfterInteraction = () => {
+
+        startMusic();
+
+        document.removeEventListener('click', startAfterInteraction);
+        document.removeEventListener('touchstart', startAfterInteraction);
+        document.removeEventListener('keydown', startAfterInteraction);
+        document.removeEventListener('pointerdown', startAfterInteraction);
+
+      };
+
+      document.addEventListener('click', startAfterInteraction, { once: true });
+      document.addEventListener('touchstart', startAfterInteraction, { once: true });
+      document.addEventListener('keydown', startAfterInteraction, { once: true });
+      document.addEventListener('pointerdown', startAfterInteraction, { once: true });
+
+
+      /* ===== TERMINAL ===== */
+
+      const termBtn = document.getElementById('terminalBtn');
+      const termOutput = document.getElementById('terminalOutput');
+      const termLines = document.getElementById('terminalLines');
+      const termFinal = document.getElementById('terminalFinal');
+
+      let terminalShown = false;
+
+      termBtn.addEventListener('click', () => {
+
+        if (!terminalShown) {
+
+          termOutput.classList.remove('hidden');
+
+          const msgs = [
+            '> Initializing gratitude...',
+            '> Loading memories...',
+            '> Compiling lessons...',
+            '> Debugging doubts...',
+            '> Mentor guidance: FOUND ❤️',
+            '> Result: THANK YOU, SIR!'
+          ];
+
+          termLines.innerHTML = '';
+
+          let idx = 0;
+
+          const interval = setInterval(() => {
+
+            if (idx < msgs.length) {
+
+              const line = document.createElement('div');
+
+              line.textContent = msgs[idx];
+
+              termLines.appendChild(line);
+
+              idx++;
+
+            } else {
+
+              clearInterval(interval);
+
+              termFinal.classList.remove('hidden');
+
+              termFinal.textContent =
+                'Compilation successful. Happy Teacher’s Day! 🎉';
+
+            }
+
+          }, 380);
+
+          terminalShown = true;
+
+        } else {
+
+          termOutput.classList.toggle('hidden');
+
+        }
+
+      });
+
+
+      /* ===== CONFETTI ===== */
+
+      const confettiTrigger = document.getElementById('confettiTrigger');
+
+      let confettiRunning = false;
+
+      function launchConfetti() {
+
+        if (confettiRunning) return;
+
+        confettiRunning = true;
+
+        const colors = [
+          '#f472b6',
+          '#60a5fa',
+          '#a78bfa',
+          '#34d399',
+          '#fbbf24',
+          '#f87171',
+          '#f472b6',
+          '#38bdf8'
+        ];
+
+        for (let i = 0; i < 140; i++) {
+
+          const el = document.createElement('div');
+
+          el.className = 'confetti-piece';
+
+          const size = 6 + Math.random() * 14;
+
+          el.style.width = size + 'px';
+          el.style.height = size * (0.4 + Math.random() * 0.6) + 'px';
+          el.style.background = colors[Math.floor(Math.random() * colors.length)];
+          el.style.left = Math.random() * 100 + '%';
+          el.style.top = '-10%';
+          el.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+
+          el.style.transform =
+            `rotate(${Math.random() * 360}deg)`;
+
+          el.style.transition =
+            `transform ${2 + Math.random() * 3}s cubic-bezier(0.2,0.8,0.3,1), top ${3 + Math.random() * 4}s ease-in`;
+
+          document.body.appendChild(el);
+
+          setTimeout(() => {
+
+            el.style.top =
+              (100 + Math.random() * 40) + '%';
+
+            el.style.transform =
+              `rotate(${Math.random() * 720}deg)`;
+
+          }, 20);
+
+          setTimeout(() => el.remove(), 5500);
+
+        }
+
+        setTimeout(() => {
+          confettiRunning = false;
+        }, 600);
+
+      }
+
+      confettiTrigger.addEventListener('click', launchConfetti);
+
+
+      /* ===== FINAL SECTION CONFETTI ===== */
+
+      const finalSection =
+        document.getElementById('final');
+
+      const observerFinal =
+        new IntersectionObserver((entries) => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+              launchConfetti();
+            }
+
+          });
+
+        }, {
+          threshold: 0.35
+        });
+
+      observerFinal.observe(finalSection);
+
+
+      /* ===== SCROLL REVEAL ===== */
+
+      const revealEls =
+        document.querySelectorAll('.reveal');
+
+      const revealObserver =
+        new IntersectionObserver((entries) => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add('visible');
+
+            }
+
+          });
+
+        }, {
+          threshold: 0.15,
+          rootMargin: '0px 0px -30px 0px'
+        });
+
+      revealEls.forEach(el =>
+        revealObserver.observe(el)
       );
-    "></div>
 
 
-    <!-- =====================================================
-       HIDDEN BACKGROUND MUSIC
-       
-       IMPORTANT:
-       Browser autoplay policies may block sound.
-       The JavaScript below tries autoplay first,
-       then starts music after the first interaction.
-  ====================================================== -->
+      /* ===== FADE IN ANIMATION ===== */
 
-    <audio id="bgMusic" loop preload="auto" autoplay>
-        <source src="audio.mp3" type="audio/mpeg">
-    </audio>
+      const style =
+        document.createElement('style');
 
-
-    <!-- =====================================================
-       HERO
-  ====================================================== -->
-
-    <section id="hero" class="
-      relative
-      min-h-screen
-      flex
-      items-center
-      justify-center
-      hero-glow
-      overflow-hidden
-      px-6
-      pt-10
-      pb-20
-      bg-grid-pattern
-    ">
-
-        <!-- Floating Code -->
-
-        <div class="
-        code-float
-        top-[10%]
-        left-[6%]
-        text-4xl
-      ">
-            { }
-        </div>
-
-        <div class="
-        code-float
-        bottom-[22%]
-        right-[8%]
-        text-4xl
-      ">
-            &lt;/&gt;
-        </div>
-
-        <div class="
-        code-float
-        top-[25%]
-        right-[4%]
-        text-xl
-      ">
-            Java · Servlet
-        </div>
-
-        <div class="
-        code-float
-        bottom-[30%]
-        left-[4%]
-        text-xl
-      ">
-            Spring · JDBC
-        </div>
-
-        <div class="
-        code-float
-        top-[55%]
-        left-[12%]
-        text-2xl
-      ">
-            HTML · CSS · JS
-        </div>
-
-        <div class="
-        code-float
-        bottom-[12%]
-        right-[18%]
-        text-xl
-      ">
-            public class Mentor
-        </div>
-
-
-        <!-- Hero Content -->
-
-        <div class="
-        relative
-        z-10
-        max-w-5xl
-        mx-auto
-        text-center
-      ">
-
-            <!-- =================================================
-           TEACHER PHOTO
-      ================================================== -->
-
-            <div class="
-          flex
-          justify-center
-          mb-8
-        ">
-
-                <div class="
-            relative
-            w-48
-            h-48
-            sm:w-60
-            sm:h-60
-            md:w-72
-            md:h-72
-            rounded-full
-            p-1.5
-            glass-premium
-            glow-ring
-            animate-[fadeIn_1s_ease-out]
-          ">
-
-                    <div class="
-              w-full
-              h-full
-              rounded-full
-              overflow-hidden
-              border-2
-              border-white/10
-              shadow-2xl
-            ">
-
-                        <img src="teacher.jpeg" alt="Sir Yumkhaibam Anish Khan" class="
-                w-full
-                h-full
-                object-cover
-              " />
-
-                    </div>
-
-                    <div class="
-              absolute
-              inset-0
-              rounded-full
-              border
-              border-indigo-400/20
-              animate-pulse
-            "></div>
-
-                </div>
-
-            </div>
-
-
-            <!-- =================================================
-           MAIN TITLE
-      ================================================== -->
-
-            <h1 class="
-          text-4xl
-          sm:text-5xl
-          md:text-7xl
-          font-bold
-          bg-gradient-to-r
-          from-indigo-200
-          via-blue-200
-          to-cyan-200
-          bg-clip-text
-          text-transparent
-          leading-tight
-          glow-text
-        ">
-                Happy Teacher’s Day, Sir ❤️
-            </h1>
-
-
-            <p class="
-          text-xl
-          sm:text-2xl
-          md:text-3xl
-          font-light
-          text-indigo-100/80
-          mt-3
-        ">
-                To My Mentor,
-                Sir Yumkhaibam Anish Khan
-            </p>
-
-
-            <p class="
-          max-w-2xl
-          mx-auto
-          mt-6
-          text-base
-          sm:text-lg
-          text-slate-300/70
-          font-light
-          leading-relaxed
-        ">
-                “You didn't just teach me to code.
-                You taught me how to think, build,
-                solve problems, and never give up.”
-            </p>
-
-
-            <!-- =================================================
-           TERMINAL EASTER EGG
-      ================================================== -->
-
-            <div class="
-          mt-10
-          flex
-          justify-center
-        ">
-
-                <button id="terminalBtn" class="
-            terminal-btn
-            px-5
-            py-2.5
-            rounded-full
-            flex
-            items-center
-            gap-2
-          ">
-
-                    <i class="fas fa-terminal"></i>
-
-                    $ sudo thank-you --mentor
-
-                </button>
-
-            </div>
-
-
-            <!-- Terminal Output -->
-
-            <div id="terminalOutput" class="
-          mt-4
-          max-w-md
-          mx-auto
-          text-left
-          text-xs
-          font-mono
-          bg-[#0f172a]/80
-          p-5
-          rounded-2xl
-          border
-          border-slate-700/50
-          hidden
-          transition-all
-        ">
-
-                <div id="terminalLines" class="
-            space-y-1.5
-            text-cyan-300
-          "></div>
-
-                <div id="terminalFinal" class="
-            mt-3
-            text-emerald-300
-            font-semibold
-            hidden
-          ">
-                    Compilation successful.
-                    Happy Teacher’s Day! 🎉
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-       APPRECIATION
-  ====================================================== -->
-
-    <section id="appreciation" class="
-      py-24
-      px-6
-      bg-[#0c1020]
-      relative
-    ">
-
-        <div class="
-        max-w-4xl
-        mx-auto
-        reveal
-      ">
-
-            <h2 class="
-          text-3xl
-          md:text-5xl
-          font-bold
-          text-center
-          text-indigo-200
-        ">
-                More Than Just a Teacher
-            </h2>
-
-
-            <div class="
-          h-1
-          w-24
-          bg-gradient-to-r
-          from-indigo-400
-          to-cyan-400
-          mx-auto
-          mt-4
-          rounded-full
-        "></div>
-
-
-            <div class="
-          mt-12
-          space-y-6
-          text-slate-300/80
-          text-base
-          sm:text-lg
-          leading-relaxed
-          glass-premium
-          p-8
-          rounded-3xl
-          border
-          border-white/5
-        ">
-
-                <p>
-                    Sir Anish Khan is not just a teacher —
-                    he is a mentor who makes you believe
-                    in your own potential.
-                    He doesn't just hand out solutions;
-                    he guides you to discover them yourself.
-                    Every time I was stuck, he'd say,
-                    <span class="
-              text-indigo-300
-              italic
-            ">
-                        “Read the error, understand it,
-                        then fix it.”
-                    </span>
-                </p>
-
-
-                <p>
-                    He taught me that programming is not
-                    about memorizing syntax, but about
-                    building a mindset.
-                    He inspired me to keep learning,
-                    to be curious, and to never settle
-                    for "it works" without understanding why.
-                </p>
-
-
-                <p class="
-            text-indigo-200/70
-          ">
-                    To me, he’s the reason I still love coding.
-                    He made the journey feel less lonely.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-       LESSONS
-  ====================================================== -->
-
-    <section id="lessons" class="
-      py-24
-      px-6
-      bg-[#080c1a]
-    ">
-
-        <div class="
-        max-w-6xl
-        mx-auto
-      ">
-
-            <h2 class="
-          text-3xl
-          md:text-5xl
-          font-bold
-          text-center
-          text-indigo-200
-        ">
-                What You Taught Me
-            </h2>
-
-
-            <div class="
-          h-1
-          w-24
-          bg-gradient-to-r
-          from-indigo-400
-          to-cyan-400
-          mx-auto
-          mt-4
-          rounded-full
-        "></div>
-
-
-            <div class="
-          grid
-          grid-cols-1
-          sm:grid-cols-2
-          lg:grid-cols-3
-          gap-6
-          mt-14
-        ">
-
-                <!-- Card 1 -->
-
-                <div class="
-            card-elegant
-            p-7
-            rounded-2xl
-            reveal
-            border
-            border-white/5
-          ">
-
-                    <i class="
-              fas
-              fa-brain
-              text-indigo-400
-              text-3xl
-              mb-4
-            "></i>
-
-                    <h3 class="
-              text-xl
-              font-semibold
-              text-indigo-100
-            ">
-                        Think Before You Code
-                    </h3>
-
-                    <p class="
-              text-slate-400
-              text-sm
-              mt-2
-              leading-relaxed
-            ">
-                        “Good programming isn't just about
-                        writing code. It's about understanding
-                        the problem.”
-                    </p>
-
-                </div>
-
-
-                <!-- Card 2 -->
-
-                <div class="
-            card-elegant
-            p-7
-            rounded-2xl
-            reveal
-            border
-            border-white/5
-          ">
-
-                    <i class="
-              fas
-              fa-graduation-cap
-              text-indigo-400
-              text-3xl
-              mb-4
-            "></i>
-
-                    <h3 class="
-              text-xl
-              font-semibold
-              text-indigo-100
-            ">
-                        Never Stop Learning
-                    </h3>
-
-                    <p class="
-              text-slate-400
-              text-sm
-              mt-2
-              leading-relaxed
-            ">
-                        “Technology keeps changing,
-                        and you taught me to keep
-                        growing with it.”
-                    </p>
-
-                </div>
-
-
-                <!-- Card 3 -->
-
-                <div class="
-            card-elegant
-            p-7
-            rounded-2xl
-            reveal
-            border
-            border-white/5
-          ">
-
-                    <i class="
-              fas
-              fa-bug
-              text-indigo-400
-              text-3xl
-              mb-4
-            "></i>
-
-                    <h3 class="
-              text-xl
-              font-semibold
-              text-indigo-100
-            ">
-                        Debug, Learn, Improve
-                    </h3>
-
-                    <p class="
-              text-slate-400
-              text-sm
-              mt-2
-              leading-relaxed
-            ">
-                        “Every error is another opportunity
-                        to understand something better.”
-                    </p>
-
-                </div>
-
-
-                <!-- Card 4 -->
-
-                <div class="
-            card-elegant
-            p-7
-            rounded-2xl
-            reveal
-            border
-            border-white/5
-          ">
-
-                    <i class="
-              fas
-              fa-heart
-              text-indigo-400
-              text-3xl
-              mb-4
-            "></i>
-
-                    <h3 class="
-              text-xl
-              font-semibold
-              text-indigo-100
-            ">
-                        Believe in Yourself
-                    </h3>
-
-                    <p class="
-              text-slate-400
-              text-sm
-              mt-2
-              leading-relaxed
-            ">
-                        “Your guidance gave me confidence
-                        to keep trying even when the code
-                        refused to cooperate.”
-                    </p>
-
-                </div>
-
-
-                <!-- Card 5 -->
-
-                <div class="
-            card-elegant
-            p-7
-            rounded-2xl
-            reveal
-            border
-            border-white/5
-          ">
-
-                    <i class="
-              fas
-              fa-code
-              text-indigo-400
-              text-3xl
-              mb-4
-            "></i>
-
-                    <h3 class="
-              text-xl
-              font-semibold
-              text-indigo-100
-            ">
-                        Build Something Real
-                    </h3>
-
-                    <p class="
-              text-slate-400
-              text-sm
-              mt-2
-              leading-relaxed
-            ">
-                        “You inspired me to turn ideas
-                        into actual projects.”
-                    </p>
-
-                </div>
-
-
-                <!-- Card 6 -->
-
-                <div class="
-            card-elegant
-            p-7
-            rounded-2xl
-            reveal
-            border
-            border-white/5
-          ">
-
-                    <i class="
-              fas
-              fa-rocket
-              text-indigo-400
-              text-3xl
-              mb-4
-            "></i>
-
-                    <h3 class="
-              text-xl
-              font-semibold
-              text-indigo-100
-            ">
-                        Keep Going
-                    </h3>
-
-                    <p class="
-              text-slate-400
-              text-sm
-              mt-2
-              leading-relaxed
-            ">
-                        “The biggest lesson wasn't a
-                        programming language — it was persistence.”
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-       QUOTE
-  ====================================================== -->
-
-    <section class="
-      py-24
-      px-6
-      bg-[#0c1020]
-      flex
-      items-center
-      justify-center
-    ">
-
-        <div class="
-        max-w-4xl
-        mx-auto
-        text-center
-        reveal
-      ">
-
-            <div class="
-          text-5xl
-          text-indigo-300/20
-        ">
-                “
-            </div>
-
-
-            <p class="
-          text-2xl
-          sm:text-3xl
-          md:text-4xl
-          font-light
-          text-indigo-100/80
-          italic
-          leading-relaxed
-        ">
-                “Behind every growing developer,
-                there is someone who patiently
-                answered the same question twice,
-                explained the same concept again,
-                and encouraged them to try one more time.”
-            </p>
-
-
-            <p class="
-          mt-8
-          text-xl
-          text-indigo-300/60
-          font-light
-        ">
-                — With gratitude, your student ❤️
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-       TIMELINE
-  ====================================================== -->
-
-    <section class="
-      py-24
-      px-6
-      bg-[#080c1a]
-    ">
-
-        <div class="
-        max-w-3xl
-        mx-auto
-      ">
-
-            <h2 class="
-          text-3xl
-          md:text-5xl
-          font-bold
-          text-center
-          text-indigo-200
-        ">
-                My Developer Journey
-            </h2>
-
-
-            <div class="
-          h-1
-          w-24
-          bg-gradient-to-r
-          from-indigo-400
-          to-cyan-400
-          mx-auto
-          mt-4
-          rounded-full
-        "></div>
-
-
-            <div class="
-          mt-14
-          relative
-          flex
-          flex-col
-          items-center
-        ">
-
-                <div class="
-            timeline-line
-            absolute
-            left-1/2
-            top-0
-            bottom-0
-            -translate-x-1/2
-            w-0.5
-          "></div>
-
-
-                <div class="
-            space-y-10
-            w-full
-            max-w-sm
-            relative
-          ">
-
-                    <div class="
-              flex
-              items-center
-              gap-5
-              reveal
-            ">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="
-                glass-premium
-                p-4
-                rounded-2xl
-                flex-1
-                border
-                border-white/5
-              ">
-
-                            <i class="
-                  fas
-                  fa-book-open
-                  text-indigo-300
-                  mr-3
-                "></i>
-
-                            Learning
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="
-              flex
-              items-center
-              gap-5
-              reveal
-            ">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="
-                glass-premium
-                p-4
-                rounded-2xl
-                flex-1
-                border
-                border-white/5
-              ">
-
-                            <i class="
-                  fas
-                  fa-laptop-code
-                  text-indigo-300
-                  mr-3
-                "></i>
-
-                            Practicing
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="
-              flex
-              items-center
-              gap-5
-              reveal
-            ">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="
-                glass-premium
-                p-4
-                rounded-2xl
-                flex-1
-                border
-                border-white/5
-              ">
-
-                            <i class="
-                  fas
-                  fa-project-diagram
-                  text-indigo-300
-                  mr-3
-                "></i>
-
-                            Making Projects
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="
-              flex
-              items-center
-              gap-5
-              reveal
-            ">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="
-                glass-premium
-                p-4
-                rounded-2xl
-                flex-1
-                border
-                border-white/5
-              ">
-
-                            <i class="
-                  fas
-                  fa-search
-                  text-indigo-300
-                  mr-3
-                "></i>
-
-                            Debugging
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="
-              flex
-              items-center
-              gap-5
-              reveal
-            ">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="
-                glass-premium
-                p-4
-                rounded-2xl
-                flex-1
-                border
-                border-white/5
-              ">
-
-                            <i class="
-                  fas
-                  fa-arrow-up
-                  text-indigo-300
-                  mr-3
-                "></i>
-
-                            Improving
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="
-              flex
-              items-center
-              gap-5
-              reveal
-            ">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="
-                glass-premium
-                p-4
-                rounded-2xl
-                flex-1
-                border
-                border-white/5
-              ">
-
-                            <i class="
-                  fas
-                  fa-user-check
-                  text-indigo-300
-                  mr-3
-                "></i>
-
-                            Becoming a Developer
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-       THANK YOU
-  ====================================================== -->
-
-    <section class="
-      py-24
-      px-6
-      bg-[#0c1020]
-      flex
-      items-center
-      justify-center
-    ">
-
-        <div class="
-        max-w-3xl
-        mx-auto
-        text-center
-        reveal
-      ">
-
-            <h2 class="
-          text-4xl
-          md:text-6xl
-          font-bold
-          text-indigo-200
-        ">
-                Thank You, Sir.
-            </h2>
-
-
-            <div class="
-          h-1
-          w-24
-          bg-gradient-to-r
-          from-indigo-400
-          to-cyan-400
-          mx-auto
-          mt-4
-          rounded-full
-        "></div>
-
-
-            <p class="
-          mt-10
-          text-lg
-          sm:text-xl
-          text-slate-300/70
-          leading-relaxed
-        ">
-                “Thank you for every explanation,
-                every correction, every piece of advice,
-                and every time you encouraged me to keep going.”
-            </p>
-
-
-            <p class="
-          mt-6
-          text-base
-          sm:text-lg
-          text-indigo-200/60
-          italic
-        ">
-                “I may forget some lines of code,
-                but I will never forget the lessons
-                you taught me.”
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-       FINAL SECTION
-  ====================================================== -->
-
-    <section id="final" class="
-      relative
-      min-h-screen
-      flex
-      flex-col
-      items-center
-      justify-center
-      px-6
-      bg-[#080c1a]
-      overflow-hidden
-    ">
-
-        <div class="
-        relative
-        z-10
-        text-center
-        reveal
-      ">
-
-            <h1 class="
-          text-5xl
-          sm:text-7xl
-          md:text-8xl
-          font-extrabold
-          bg-gradient-to-r
-          from-indigo-200
-          via-fuchsia-200
-          to-cyan-200
-          bg-clip-text
-          text-transparent
-          leading-tight
-          glow-text
-        ">
-                HAPPY TEACHER’S DAY
-            </h1>
-
-
-            <p class="
-          text-3xl
-          sm:text-4xl
-          md:text-5xl
-          font-light
-          text-indigo-100/70
-          mt-4
-        ">
-                Sir Yumkhaibam Anish Khan
-            </p>
-
-
-            <p class="
-          mt-8
-          text-xl
-          text-indigo-200/60
-        ">
-                From your grateful student ❤️
-            </p>
-
-
-            <button id="confettiTrigger" class="
-          mt-10
-          px-8
-          py-3.5
-          rounded-full
-          bg-indigo-500/20
-          border
-          border-indigo-400/30
-          text-indigo-200
-          hover:bg-indigo-500/30
-          transition
-          text-sm
-        ">
-                🎉 Celebrate
-            </button>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-       JAVASCRIPT
-  ====================================================== -->
-
-    <script>
-
-        (function () {
-
-
-            /* =================================================
-               PARTICLES
-            ================================================== */
-
-            const pContainer =
-                document.getElementById('particles');
-
-            for (let i = 0; i < 50; i++) {
-
-                const p =
-                    document.createElement('div');
-
-                p.className =
-                    'particle';
-
-                const size =
-                    3 + Math.random() * 10;
-
-                p.style.width =
-                    size + 'px';
-
-                p.style.height =
-                    size + 'px';
-
-                p.style.left =
-                    Math.random() * 100 + '%';
-
-                p.style.top =
-                    Math.random() * 100 + '%';
-
-                p.style.opacity =
-                    0.15 + Math.random() * 0.25;
-
-                p.style.animationDuration =
-                    (10 + Math.random() * 14) + 's';
-
-                p.style.animationDelay =
-                    (Math.random() * 6) + 's';
-
-                pContainer.appendChild(p);
-
-            }
-
-
-            /* =================================================
-               MOUSE GLOW
-            ================================================== */
-
-            const glow =
-                document.getElementById('mouseGlow');
-
-            document.addEventListener(
-                'mousemove',
-                (e) => {
-
-                    glow.style.left =
-                        (e.clientX - 180) + 'px';
-
-                    glow.style.top =
-                        (e.clientY - 180) + 'px';
-
-                }
-            );
-
-
-            /* =================================================
-               HIDDEN BACKGROUND MUSIC
-            ================================================== */
-
-            const audio =
-                document.getElementById('bgMusic');
-
-            let musicStarted = false;
-
-
-            /*
-              Try autoplay after page loads.
-            */
-
-            window.addEventListener(
-                'load',
-                () => {
-
-                    setTimeout(
-                        () => {
-
-                            audio
-                                .play()
-                                .then(() => {
-
-                                    musicStarted = true;
-
-                                })
-                                .catch(() => {
-
-                                    /*
-                                      Browser blocked autoplay.
-                  
-                                      Music will start after
-                                      the user's first interaction.
-                                    */
-
-                                });
-
-                        },
-                        500
-                    );
-
-                }
-            );
-
-
-            /*
-              Start music after first interaction.
-            */
-
-            function startMusicAfterInteraction() {
-
-                if (musicStarted) {
-                    return;
-                }
-
-                audio
-                    .play()
-                    .then(() => {
-
-                        musicStarted = true;
-
-                        removeMusicListeners();
-
-                    })
-                    .catch(() => {
-
-                        /*
-                          Ignore autoplay errors.
-                        */
-
-                    });
-
-            }
-
-
-            /*
-              First interaction listeners.
-            */
-
-            document.addEventListener(
-                'click',
-                startMusicAfterInteraction,
-                { passive: true }
-            );
-
-            document.addEventListener(
-                'touchstart',
-                startMusicAfterInteraction,
-                { passive: true }
-            );
-
-            document.addEventListener(
-                'keydown',
-                startMusicAfterInteraction,
-                { passive: true }
-            );
-
-            document.addEventListener(
-                'pointerdown',
-                startMusicAfterInteraction,
-                { passive: true }
-            );
-
-
-            /*
-              Remove listeners once music starts.
-            */
-
-            function removeMusicListeners() {
-
-                document.removeEventListener(
-                    'click',
-                    startMusicAfterInteraction
-                );
-
-                document.removeEventListener(
-                    'touchstart',
-                    startMusicAfterInteraction
-                );
-
-                document.removeEventListener(
-                    'keydown',
-                    startMusicAfterInteraction
-                );
-
-                document.removeEventListener(
-                    'pointerdown',
-                    startMusicAfterInteraction
-                );
-
-            }
-
-
-            /* =================================================
-               TERMINAL EASTER EGG
-            ================================================== */
-
-            const termBtn =
-                document.getElementById(
-                    'terminalBtn'
-                );
-
-            const termOutput =
-                document.getElementById(
-                    'terminalOutput'
-                );
-
-            const termLines =
-                document.getElementById(
-                    'terminalLines'
-                );
-
-            const termFinal =
-                document.getElementById(
-                    'terminalFinal'
-                );
-
-            let terminalShown = false;
-
-
-            termBtn.addEventListener(
-                'click',
-                () => {
-
-                    if (!terminalShown) {
-
-                        termOutput.classList.remove(
-                            'hidden'
-                        );
-
-
-                        const msgs = [
-
-                            '> Initializing gratitude...',
-
-                            '> Loading memories...',
-
-                            '> Compiling lessons...',
-
-                            '> Debugging doubts...',
-
-                            '> Mentor guidance: FOUND ❤️',
-
-                            '> Result: THANK YOU, SIR!'
-
-                        ];
-
-
-                        termLines.innerHTML = '';
-
-                        let idx = 0;
-
-
-                        const interval =
-                            setInterval(
-                                () => {
-
-                                    if (
-                                        idx < msgs.length
-                                    ) {
-
-                                        const line =
-                                            document.createElement(
-                                                'div'
-                                            );
-
-                                        line.textContent =
-                                            msgs[idx];
-
-                                        termLines.appendChild(
-                                            line
-                                        );
-
-                                        idx++;
-
-                                    }
-
-                                    else {
-
-                                        clearInterval(
-                                            interval
-                                        );
-
-                                        termFinal.classList.remove(
-                                            'hidden'
-                                        );
-
-                                        termFinal.textContent =
-                                            'Compilation successful. Happy Teacher’s Day! 🎉';
-
-                                    }
-
-                                },
-                                380
-                            );
-
-
-                        terminalShown = true;
-
-                    }
-
-                    else {
-
-                        termOutput.classList.toggle(
-                            'hidden'
-                        );
-
-                    }
-
-                }
-            );
-
-
-            /* =================================================
-               CONFETTI
-            ================================================== */
-
-            const confettiTrigger =
-                document.getElementById(
-                    'confettiTrigger'
-                );
-
-            let confettiRunning = false;
-
-
-            function launchConfetti() {
-
-                if (confettiRunning) {
-                    return;
-                }
-
-                confettiRunning = true;
-
-
-                const colors = [
-
-                    '#f472b6',
-                    '#60a5fa',
-                    '#a78bfa',
-                    '#34d399',
-                    '#fbbf24',
-                    '#f87171',
-                    '#f472b6',
-                    '#38bdf8'
-
-                ];
-
-
-                for (
-                    let i = 0;
-                    i < 140;
-                    i++
-                ) {
-
-                    const el =
-                        document.createElement(
-                            'div'
-                        );
-
-                    el.className =
-                        'confetti-piece';
-
-
-                    const size =
-                        6 + Math.random() * 14;
-
-
-                    el.style.width =
-                        size + 'px';
-
-                    el.style.height =
-                        size *
-                        (
-                            0.4 +
-                            Math.random() * 0.6
-                        ) +
-                        'px';
-
-
-                    el.style.background =
-                        colors[
-                        Math.floor(
-                            Math.random() *
-                            colors.length
-                        )
-                        ];
-
-
-                    el.style.left =
-                        Math.random() * 100 +
-                        '%';
-
-
-                    el.style.top =
-                        '-10%';
-
-
-                    el.style.borderRadius =
-                        Math.random() > 0.5
-                            ? '50%'
-                            : '2px';
-
-
-                    el.style.transform =
-                        `rotate(${Math.random() * 360}deg)`;
-
-
-                    el.style.transition =
-                        `transform ${2 + Math.random() * 3
-                        }s cubic-bezier(0.2,0.8,0.3,1),
-            top ${3 + Math.random() * 4
-                        }s ease-in`;
-
-
-                    document.body.appendChild(
-                        el
-                    );
-
-
-                    setTimeout(
-                        () => {
-
-                            el.style.top =
-                                (
-                                    100 +
-                                    Math.random() * 40
-                                ) + '%';
-
-
-                            el.style.transform =
-                                `rotate(${Math.random() * 720
-                                }deg)`;
-
-                        },
-                        20
-                    );
-
-
-                    setTimeout(
-                        () => {
-
-                            el.remove();
-
-                        },
-                        5500
-                    );
-
-                }
-
-
-                setTimeout(
-                    () => {
-
-                        confettiRunning =
-                            false;
-
-                    },
-                    600
-                );
-
-            }
-
-
-            confettiTrigger.addEventListener(
-                'click',
-                launchConfetti
-            );
-
-
-            /* =================================================
-               FINAL SECTION AUTO CONFETTI
-            ================================================== */
-
-            const finalSection =
-                document.getElementById(
-                    'final'
-                );
-
-
-            const observerFinal =
-                new IntersectionObserver(
-                    (entries) => {
-
-                        entries.forEach(
-                            (entry) => {
-
-                                if (
-                                    entry.isIntersecting
-                                ) {
-
-                                    launchConfetti();
-
-                                }
-
-                            }
-                        );
-
-                    },
-                    {
-                        threshold: 0.35
-                    }
-                );
-
-
-            observerFinal.observe(
-                finalSection
-            );
-
-
-            /* =================================================
-               SCROLL REVEAL
-            ================================================== */
-
-            const revealEls =
-                document.querySelectorAll(
-                    '.reveal'
-                );
-
-
-            const revealObserver =
-                new IntersectionObserver(
-                    (entries) => {
-
-                        entries.forEach(
-                            (entry) => {
-
-                                if (
-                                    entry.isIntersecting
-                                ) {
-
-                                    entry.target.classList.add(
-                                        'visible'
-                                    );
-
-                                }
-
-                            }
-                        );
-
-                    },
-                    {
-                        threshold: 0.15,
-
-                        rootMargin:
-                            '0px 0px -30px 0px'
-                    }
-                );
-
-
-            revealEls.forEach(
-                (el) => {
-
-                    revealObserver.observe(el);
-
-                }
-            );
-
-
-            /* =================================================
-               FADE IN ANIMATION
-            ================================================== */
-
-            const style =
-                document.createElement(
-                    'style'
-                );
-
-
-            style.textContent = `
-
+      style.textContent = `
         @keyframes fadeIn {
-
           0% {
             opacity: 0;
             transform: scale(0.92);
@@ -2154,28 +773,17 @@
             opacity: 1;
             transform: scale(1);
           }
-
         }
 
         .animate-\\[fadeIn_1s_ease-out\\] {
-
-          animation:
-            fadeIn 1s ease-out;
-
+          animation: fadeIn 1s ease-out;
         }
-
       `;
 
+      document.head.appendChild(style);
 
-            document.head.appendChild(
-                style
-            );
-
-
-        })();
-
-    </script>
+    })();
+  </script>
 
 </body>
-
 </html>
